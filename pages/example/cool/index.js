@@ -45,7 +45,7 @@ export default function Example() {
             <h1 className="dark:text-white text-2xl font-semibold">Next OG Dynamic Title Example</h1>
             <a href={`${process.env.API_URL}/api/cool?title=Blog%20Title%20A`} target="_blank" rel="noreferrer" className={linkClassName}>/api/cool?title=Blog%20Title%20A</a>
             <div className="mt-4">
-              <a href={`https://twitter.com/intent/tweet?url=${process.env.API_URL}/example/cool&text=try+og+image%0A%0A`} target="_blank" rel="noreferrer noopener"
+              <a href={`https://twitter.com/intent/tweet?url=${process.env.API_URL}/example/cool`} target="_blank" rel="noreferrer noopener"
                 className="bg-blue-500 hover:bg-blue-600 transition-all text-white text-sm font-semibold py-1 px-2 rounded-md">
                 Try Tweet this page
               </a>
