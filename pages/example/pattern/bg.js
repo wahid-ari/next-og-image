@@ -13,7 +13,6 @@ export default function Example() {
     <div>
       <Head>
         <title>Next OG Image Example</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="title" content="Next OG Image Example"></meta>
         <meta name="description" content="Next OG Image Example" />
         <link rel="icon" href="/favicon.ico" />
@@ -65,7 +64,6 @@ export default function Example() {
               
 <Head>
   <title>Next OG Image Example</title>
-  <link rel="icon" href="/favicon.ico" />
   <meta name="title" content="Next OG Image Example"></meta>
   <meta name="description" content="Next OG Image Example" />
   <link rel="icon" href="/favicon.ico" />

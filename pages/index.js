@@ -80,6 +80,7 @@ export default function Home() {
             <a href={`${process.env.API_URL}/api/bgjar?title=Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer&bg=hexagon`} target="_blank" rel="noreferrer" className={linkClassName}>/api/bgjar?title=Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer&bg=hexagon</a>
             <a href={`${process.env.API_URL}/api/bgjar?bg=overlay`} target="_blank" rel="noreferrer" className={linkClassName}>/api/bgjar?bg=overlay</a>
             <a href={`${process.env.API_URL}/api/bgjar?bg=sprinkle`} target="_blank" rel="noreferrer" className={linkClassName}>/api/bgjar?bg=sprinkle</a>
+            <a href={`${process.env.API_URL}/api/bgjar?bg=rect`} target="_blank" rel="noreferrer" className={linkClassName}>/api/bgjar?bg=rect</a>
           </div>
 
           <div className="mb-6">
