@@ -13,12 +13,21 @@ export default function Example() {
     <div>
       <Head>
         <title>Next OG Image Example</title>
+        <meta name="title" content="Next OG Image Example"></meta>
         <meta name="description" content="Next OG Image Example" />
-        <meta
-          property="og:image"
-          content={`${process.env.API_URL}/api/dynamic-image?username=vercel&bg=dark`}
-        />
         <link rel="icon" href="/favicon.ico" />
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Next OG Image Example" />
+        <meta property="og:description" content="Next OG Image Example" />
+        <meta property="og:url" content={`${process.env.API_URL}/example/dynamic-image`} />
+        <meta property="og:image" content={`${process.env.API_URL}/api/dynamic-image?username=vercel&bg=dark`} />
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Next OG Image Example" />
+        <meta property="twitter:description" content="Next OG Image Example" />
+        <meta property="twitter:url" content={`${process.env.API_URL}/example/dynamic-image`} />
+        <meta property="twitter:image" content={`${process.env.API_URL}/api/dynamic-image?username=vercel&bg=dark`} />
       </Head>
 
       <main className="dark:bg-neutral-900 min-h-screen pb-8">
@@ -55,9 +64,21 @@ export default function Example() {
               
 <Head>
   <title>Next OG Image Example</title>
+  <meta name="title" content="Next OG Image Example"></meta>
   <meta name="description" content="Next OG Image Example" />
-  <meta property="og:image" content={${process.env.API_URL}/api/dynamic-image?username=vercel&bg=dark} />
   <link rel="icon" href="/favicon.ico" />
+  {/* <!-- Open Graph / Facebook --> */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Next OG Image Example" />
+  <meta property="og:description" content="Next OG Image Example" />
+  <meta property="og:url" content={${process.env.API_URL}/example/dynamic-image} />
+  <meta property="og:image" content={${process.env.API_URL}/api/dynamic-image?username=vercel&bg=dark} />
+  {/* <!-- Twitter --> */}
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Next OG Image Example" />
+  <meta property="twitter:description" content="Next OG Image Example" />
+  <meta property="twitter:url" content={${process.env.API_URL}/example/dynamic-image} />
+  <meta property="twitter:image" content={${process.env.API_URL}/api/dynamic-image?username=vercel&bg=dark} />
 </Head>`} />
             </div>
           </div>
