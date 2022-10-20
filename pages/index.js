@@ -10,8 +10,20 @@ export default function Home() {
     <div>
       <Head>
         <title>Next OG Image</title>
+        <meta name="title" content="Next OG Image"></meta>
         <meta name="description" content="Next OG Image" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Next OG Image" />
+        <meta property="og:description" content="Next OG Image" />
+        <meta property="og:url" content={`${process.env.API_URL}/example`} />
+        <meta property="og:image" content={`${process.env.API_URL}/api/bgjar?title=Next OG Image&bg=hexagon`} />
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Next OG Image" />
+        <meta property="twitter:description" content="Next OG Image" />
+        <meta property="twitter:url" content={`${process.env.API_URL}/example`} />
+        <meta property="twitter:image" content={`${process.env.API_URL}/api/bgjar?title=Next OG Image&bg=hexagon`} />
       </Head>
 
       <main className="dark:bg-neutral-900 min-h-screen pb-8">
