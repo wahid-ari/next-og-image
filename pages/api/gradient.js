@@ -189,7 +189,35 @@ export default async function handler(req) {
             justifyContent: 'center',
             alignItems: 'center',
             display: 'flex',
-            background: 'linear-gradient(to right, #0f2027, #203a43, #2c5364)',
+            background: `linear-gradient(
+              135deg,
+              transparent 0%,
+              transparent 1%,
+              rgba(13, 90, 227, 0.5) 1%,
+              rgba(13, 90, 227, 0.5) 34%,
+              transparent 34%,
+              transparent 73%,
+              rgba(39, 220, 232, 0.5) 73%,
+              rgba(39, 220, 232, 0.5) 100%
+            ),
+            linear-gradient(
+              45deg,
+              rgb(13, 90, 227) 0%,
+              rgb(13, 90, 227) 62%,
+              rgb(20, 123, 228) 62%,
+              rgb(20, 123, 228) 100%
+            )`,
+           
+            // background: `linear-gradient(to bottom, #1C7CE0, #150051)`,
+            
+            // background: `linear-gradient(
+            //   145deg,
+            //   rgba(2, 132, 199) 34%,
+            //   transparent 34%,
+            //   transparent 68%,
+            //   rgba(56, 189, 248) 68%
+            // ),
+            // linear-gradient(rgb(14, 165, 233) 62%, rgb(14, 165, 233) 100%)`,
           }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -201,7 +229,7 @@ export default async function handler(req) {
               borderRadius: 128,
             }}
           />
-          <div style={blogClassName} >
+          <div style={{ fontSize: 60, color: '#f1f1f1', marginTop: '40px' }} >
             BLOG
           </div>
           <div style={titleClassName} >

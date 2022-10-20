@@ -4,7 +4,7 @@ const linkClassName = "text-sky-500 hover:text-sky-600 transition-all text-sm fo
 export default function ConsoleSidebar() {
   return (
     <div className="sm:w-2/6 px-4 mx-auto pt-5">
-      <div className="sticky top-[4.5rem]  border-r dark:border-neutral-800">
+      <div className="border-r dark:border-neutral-800">
         <h1 className="dark:text-white font-semibold mb-4">Example</h1>
         <p className="dark:text-white font-semibold text-sm mb-2">Dynamic Image</p>
         <Link href='/example'>
@@ -26,6 +26,28 @@ export default function ConsoleSidebar() {
         <Link href='/example/blog/bg'>
           <a className={linkClassName}>
             ?title=Blog Title A&bg=dark
+          </a>
+        </Link>
+        <p className="dark:text-white font-semibold text-sm mt-3 mb-2">Tailwind</p>
+        <Link href='/example/tailwind/'>
+          <a className={linkClassName}>
+            ?tailwind=Blog Title A
+          </a>
+        </Link>
+        <Link href='/example/tailwind/bg'>
+          <a className={linkClassName}>
+            ?tailwind=Blog Title A&bg=dark
+          </a>
+        </Link>
+        <p className="dark:text-white font-semibold text-sm mt-3 mb-2">Gradient</p>
+        <Link href='/example/gradient/'>
+          <a className={linkClassName}>
+            ?gradient=Blog Title A
+          </a>
+        </Link>
+        <Link href='/example/gradient/bg'>
+          <a className={linkClassName}>
+            ?gradient=Blog Title A&bg=dark
           </a>
         </Link>
         <p className="dark:text-white font-semibold text-sm mt-3 mb-2">Bgjar</p>
