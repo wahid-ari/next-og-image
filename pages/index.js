@@ -39,6 +39,15 @@ export default function Home() {
           </h1>
 
           <div className="mb-6">
+            <h3 className="text-neutral-700 dark:text-neutral-100 font-semibold text-lg mb-1">Default</h3>
+            <p className="text-neutral-600 dark:text-neutral-200 text-sm mb-2">In this example, using title and bg as parameter</p>
+            <a href={`${process.env.API_URL}/api/og`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og</a>
+            <a href={`${process.env.API_URL}/api/og?bg=dark`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=dark</a>
+            <a href={`${process.env.API_URL}/api/og?title=Blog Title A`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?title=Blog Title A</a>
+            <a href={`${process.env.API_URL}/api/og?title=Blog Title A&bg=dark`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?title=Blog Title A&bg=dark</a>
+          </div>
+
+          <div className="mb-6">
             <h3 className="text-neutral-700 dark:text-neutral-100 font-semibold text-lg mb-1">Dynamic Image</h3>
             <p className="text-neutral-600 dark:text-neutral-200 text-sm mb-2">In this example, your post image is made up of an avatar user image and the URL of the user’s profile. The image is fetched remotely based on the username passed as a parameter.</p>
             <a href={`${process.env.API_URL}/api/dynamic-image`} target="_blank" rel="noreferrer" className={linkClassName}>/api/dynamic-image</a>
