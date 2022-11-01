@@ -17,6 +17,22 @@ export default function ConsoleSidebar() {
             ?username=vercel&bg=dark
           </a>
         </Link>
+        <p className="dark:text-white font-semibold text-sm mt-3 mb-2">OG Image</p>
+        <Link href='/example/og'>
+          <a className={linkClassName}>
+            /og
+          </a>
+        </Link>
+        <Link href='/example/og/gradient'>
+          <a className={linkClassName}>
+            /og?bg=gradient
+          </a>
+        </Link>
+        <Link href='/example/og/svg'>
+          <a className={linkClassName}>
+            /og?bg=svg
+          </a>
+        </Link>
         <p className="dark:text-white font-semibold text-sm mt-3 mb-2">Blog Title</p>
         <Link href='/example/blog/'>
           <a className={linkClassName}>

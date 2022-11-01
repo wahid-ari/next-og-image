@@ -47,6 +47,8 @@ export default function Home() {
             <a href={`${process.env.API_URL}/api/og?title=Blog Title A&bg=dark`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?title=Blog Title A&bg=dark <span className="text-red-500">44.9 kB transferred 70.3 kB resources Finish: 266 ms</span></a>
             <a href={`${process.env.API_URL}/api/og?bg=gradient`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=gradient <span className="text-red-500">279 kB transferred 305 kB resources Finish: 836 ms</span></a>
             <a href={`${process.env.API_URL}/api/og?bg=conic`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=conic <span className="text-red-500">137 kB transferred 163 kB resources Finish: 539 ms</span></a>
+            <a href={`${process.env.API_URL}/api/og?bg=a`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=a <span className="text-red-500">192 kB transferred 217 kB resources Finish: 335 ms</span></a>
+            <a href={`${process.env.API_URL}/api/og?bg=b`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=b <span className="text-red-500">123 kB transferred 149 kB resources Finish: 382 ms</span></a>
           </div>
 
           <div className="mb-6">
