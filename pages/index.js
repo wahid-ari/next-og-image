@@ -41,10 +41,12 @@ export default function Home() {
           <div className="mb-6">
             <h3 className="text-neutral-700 dark:text-neutral-100 font-semibold text-lg mb-1">Default</h3>
             <p className="text-neutral-600 dark:text-neutral-200 text-sm mb-2">In this example, using title and bg as parameter</p>
-            <a href={`${process.env.API_URL}/api/og`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og</a>
-            <a href={`${process.env.API_URL}/api/og?bg=dark`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=dark</a>
-            <a href={`${process.env.API_URL}/api/og?title=Blog Title A`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?title=Blog Title A</a>
-            <a href={`${process.env.API_URL}/api/og?title=Blog Title A&bg=dark`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?title=Blog Title A&bg=dark</a>
+            <a href={`${process.env.API_URL}/api/og`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og <span className="text-red-500">49.5 kB transferred 75.0 kB resources Finish: 221 ms</span></a>
+            <a href={`${process.env.API_URL}/api/og?bg=dark`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=dark <span className="text-red-500">46.6 kB transferred 72.1 kB resources Finish: 194 ms</span></a>
+            <a href={`${process.env.API_URL}/api/og?title=Blog Title A`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?title=Blog Title A <span className="text-red-500">47.3 kB transferred 72.7 kB resources Finish: 227 ms</span></a>
+            <a href={`${process.env.API_URL}/api/og?title=Blog Title A&bg=dark`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?title=Blog Title A&bg=dark <span className="text-red-500">44.9 kB transferred 70.3 kB resources Finish: 266 ms</span></a>
+            <a href={`${process.env.API_URL}/api/og?bg=gradient`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=gradient <span className="text-red-500">279 kB transferred 305 kB resources Finish: 836 ms</span></a>
+            <a href={`${process.env.API_URL}/api/og?bg=conic`} target="_blank" rel="noreferrer" className={linkClassName}>/api/og?bg=conic <span className="text-red-500">137 kB transferred 163 kB resources Finish: 539 ms</span></a>
           </div>
 
           <div className="mb-6">
